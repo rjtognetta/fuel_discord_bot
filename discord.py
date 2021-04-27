@@ -8,15 +8,13 @@ class MyClient(discord.Client):
     async def on_ready(self):
         print('Logged on as', self.user)
 
-    msg = message.content
-
     async def on_message(self, message):
         # don't respond to ourselves
         if message.author == self.user:
             return
 
-        if msg == '!fuel':
-            print(msg)
+        if message.content.startswith('!fuel'):
+            print(message.content)
             #fuelOut = calc_fuel(stintTime, lapTime, fuelLap, tankCap)
             #await message.channel.send(fuelOut)
 
