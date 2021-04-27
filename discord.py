@@ -14,7 +14,7 @@ class MyClient(discord.Client):
             return
 
         if message.content.startswith('!fuel'):
-            print(message.content)
+            print(message.content.split('!fuel '))
             #fuelOut = calc_fuel(stintTime, lapTime, fuelLap, tankCap)
             #await message.channel.send(fuelOut)
 
