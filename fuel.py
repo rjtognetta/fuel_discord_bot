@@ -1,4 +1,5 @@
 # (c) 2020, Lucas Benedito <llucasdias@icloud.com>
+# (c) 2020, Rodrigo Tognetta <rjtognetta@me.com>
 
 import os
 
