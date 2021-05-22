@@ -36,8 +36,9 @@ class MyClient(discord.Client):
 
         if message.content.startswith('!help'):
           helpMsg = f"""
-Usage:     !gas (Race/Stint Length in Minutes) (Lap Time) (Fuel Per Lap) (Tank Capacity)
-Example: !gas 30 1.56 3.1 90"""
+Usage:          !gas (Race/Stint Length in Minutes) (Lap Time) (Fuel Per Lap) (Tank Capacity)
+Description:    !gas 30min race lengh - 1.56min lap time - 3.1 liters of fuel per lap - 90 liter tank capacity
+Example:        !gas 30 1.56 3.1 90"""
           await message.channel.send(message.author.mention + " " + helpMsg)
 
 def main():
